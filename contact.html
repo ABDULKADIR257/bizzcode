@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>BizzCode</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>Contact</h1>
+    <p><b>Address: </b>House 40, Road 10,Dhanmondi 7, Dhaka</p>
+    <p><b>Mobile: </b>+88 01740-202032</p>
+  <hr>
+    <h1>Find in Map</h1>
+    <p>
+          <img src="map.png" width="100%">
+    </p>
+    <hr>
+    <h1>Mail us here</h1>
+    <p><form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." size="50%">
+    <br>
+    <label for="lname">Last Name</label>
+    <br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." size="50%">
+    <br>
+    <label for="subject">Subject</label>
+    <br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width:78%"
+></textarea>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</article>
+
+<footer>Copyright &copy; Kadir</footer>
+
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
